@@ -8,161 +8,180 @@
 </head>
 
 
-<body class="bg-white">
+<!-- bg-white grid grid-cols-1 md:grid-cols-2 gap-6 p-12 -->
+<body>
+    <main class="bg-gray-100 min-h-screen">
 
-    <div class="box-border">
-
-        <div class="box-border border-2 p-4 bg-white drop-shadow-black">
+        <div class="box-border border-0 p-4 bg-gray-600">
     
-            <div>
-                <!-- Make the Navigation bar elements to be on a single line -->
-                <nav class="flex items-center space-x-4 grid-cols-2">
-                    <div>
-
-                        <img src="/test-2/assests/images/logo.svg" alt="logo">
-                    </div>
-
-                    <div class="flex right-0">
-
-                        <ul class="flex items-center space-x-4 col-span-5">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">New</a></li>
-                            <li><a href="contact.html">Popular</a></li>
-                            <li><a href="news.html">Trending</a></li>
-                            <li><a href="news.html">Categories</a></li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
+            <!-- grid grid-cols-1 md:grid-cols-2 gap-3 -->
+            <div class="border-0 p-4 bg-white">
         
-            <div class="bg-white grid grid-cols-2 gap-6 p-12">
-                <div class="">
-                    <img src="/test-2/assests/images/image-web-3-desktop.jpg" alt="">
-                    
-                    <div class="grid grid-cols-2 gap-3">
-        
-                        <div class="font-bold p-3">
-        
-                            <h1 class="text-5xl">The Bright Future of Web 3.0?</h1>
+                <div>
+                    <!-- Make the Navigation bar elements to be on a single line -->
+                    <nav class="flex items-center space-x-4 grid-cols-2 ">
+                        <div>
+    
+                            <img src="/test-2/assests/images/logo.svg" alt="logo">
                         </div>
-        
-                        <div class="p-3">
-        
-                            <div>
-        
-                                <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+                       
+                        <div class="flex justify-end">
+    
+                            <ul class="flex items-center space-x-4 col-span-5">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">New</a></li>
+                                <li><a href="contact.html">Popular</a></li>
+                                <li><a href="news.html">Trending</a></li>
+                                <li><a href="news.html">Categories</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            
+                <div class="bg-white grid grid-cols-1 md:grid-cols-2 gap-6 md:p-12 col-span-1">
+                    <div class=""> <!--set different image for mobile-->
+    
+                        
+                            <div class="">
+                        <!-- Mobile image - hidden on md screens and up -->
+                        <img src="/test-2/assests/images/image-web-3-mobile.jpg" alt="" class="block md:hidden">
+                        <!-- Desktop image - hidden on screens smaller than md -->
+                        <img src="/test-2/assests/images/image-web-3-desktop.jpg" alt="" class="hidden md:block">
+                        
+                        <div class="grid grid-cols-2 gap-3">
+                            <!-- rest of your content -->
+                            <div class="font-bold p-3">
+            
+                                <h1 class="text-5xl">The Bright Future of Web 3.0?</h1>
                             </div>
-                            
+            
                             <div class="p-3">
-        
-                                <button class="border-0 bg-red-500 hover:bg-red-600 focus:outline-2 focus:outline-offset-2 focus:outline-red-500 active:bg-700 p-4 text-2xl">Read more</button>
+            
+                                <div>
+            
+                                    <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+                                </div>
+                                
+                                <div class="p-3">
+            
+                                    <button class="border-0 bg-red-500 hover:bg-red-600 focus:outline-2 focus:outline-offset-2 focus:outline-red-500 active:bg-700 p-4 text-2xl">Read more</button>
+                                </div>
                             </div>
                         </div>
                     </div>
-        
+                        
+    
+                        
+                        
+                        <div class="grid grid-cols-2 gap-3">
+            
+                        </div>
+            
+                        
+                    </div>
                     
-                </div>
+                    <div class="bg-black text-white p-8">
+                        
+                        <div class="text-orange-500 text-3xl font-bold">
+                            <h2>New</h2>
+                        </div>
+                        
+            
+                        <div>
+    
+                            <div>
+    
+                                <h2 class="text-lg font-bold">Hydrogen VS Electric Cars</h2>
+                            </div>
+                            <div>
+    
+                                <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+                            </div>
+            
+                            <!-- horizontal line -->
+                            <hr class="border-t-2 border-gray-600 my-4">
                 
-                <div class="bg-black text-white p-8">
-                    
-                    <div class="text-orange-500 text-3xl font-bold">
-                        <h2>New</h2>
-                    </div>
-                    
-        
-                    <div>
-
-                        <div>
-
-                            <h2 class="text-lg font-bold">Hydrogen VS Electric Cars</h2>
+                            <h2 class="text-lg font-bold">The Downsides of AI Artistry</h2>
+                            <p>What are the possible adverse effects of on-demand AI image generation?</p>
+                            <hr class="border-t-2 border-gray-600 my-4">
+                
+                            <h2 class="text-lg font-bold">Is VC Funding Drying Up?</h2>
+                            <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
                         </div>
-                        <div>
-
-                            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
-                        </div>
-        
-                        <!-- horizontal line -->
-                        <hr class="border-t-2 border-gray-600 my-4">
             
-                        <h2 class="text-lg font-bold">The Downsides of AI Artistry</h2>
-                        <p>What are the possible adverse effects of on-demand AI image generation?</p>
-                        <hr class="border-t-2 border-gray-600 my-4">
+                    </div>
+                                    <!-- grid grid-cols-1 md:grid-cols-3 gap-3 col-span-full md:col-span-3 -->
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-3 col-span-full">
             
-                        <h2 class="text-lg font-bold">Is VC Funding Drying Up?</h2>
-                        <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
-                    </div>
-        
-                </div>
-        
-                <div class="grid grid-cols-3 gap-3 col-span-3">
-        
-                    <div class="grid grid-cols-2 p-2">
-                        <div>                            
-                            <img src="/test-2/assests/images/image-retro-pcs.jpg" alt="">
-                        </div>
-
-                        <div>                                    
-                            <h2 class="font-bold text-orange-400 text-3x1">01</h2>
-
-                            <div>
-                                <h2 class="text-2xl font-bold">Reviving Retro PCs</h2>
+                        <div class="grid grid-cols-2 p-2">
+                            <div>                            
+                                <img src="/test-2/assests/images/image-retro-pcs.jpg" alt="">
+                            </div>
+    
+                            <div>                                    
+                                <h2 class="font-bold text-orange-400 text-3x1">01</h2>
+    
+                                <div>
+                                    <h2 class="text-2xl font-bold">Reviving Retro PCs</h2>
+                                    
+                                </div>
+    
+                                <div>
+                                    <p>What happens when old PCs are given modern upgrades?</p>
+                                </div>
                                 
                             </div>
-
-                            <div>
-                                <p>What happens when old PCs are given modern upgrades?</p>
+                        </div>
+    
+                        <div class="grid grid-cols-2 p-2">
+                            <div>                            
+                                <img src="/test-2/assests/images/image-top-laptops.jpg" alt="">
                             </div>
-                            
-                        </div>
-                    </div>
-
-                    <div class="grid grid-cols-2 p-2">
-                        <div>                            
-                            <img src="/test-2/assests/images/image-top-laptops.jpg" alt="">
-                        </div>
-
-                        <div>                                    
-                            <h2 class="font-bold text-orange-400 text-3x1">02</h2>
-
-                            <div>
-                                <h2 class="text-2xl font-bold">Top 10 Laptops of 2022</h2>
+    
+                            <div>                                    
+                                <h2 class="font-bold text-orange-400 text-3x1">02</h2>
+    
+                                <div>
+                                    <h2 class="text-2xl font-bold">Top 10 Laptops of 2022</h2>
+                                    
+                                </div>
+    
+                                <div>
+                                    <p>Our best picks for various needs and budgets.</p>
+                                </div>
                                 
                             </div>
-
-                            <div>
-                                <p>Our best picks for various needs and budgets.</p>
+                        </div>
+    
+                        <div class="grid grid-cols-2 p-2">
+                            <div>                            
+                                <img src="/test-2/assests/images/image-gaming-growth.jpg" alt="">
                             </div>
-                            
-                        </div>
-                    </div>
-
-                    <div class="grid grid-cols-2 p-2">
-                        <div>                            
-                            <img src="/test-2/assests/images/image-gaming-growth.jpg" alt="">
-                        </div>
-
-                        <div>                                    
-                            <h2 class="font-bold text-orange-400 text-3x1">03</h2>
-
-                            <div>
-                                <h2 class="text-2xl font-bold">The Growth of Gaming</h2>
+    
+                            <div>                                    
+                                <h2 class="font-bold text-orange-400 text-3x1">03</h2>
+    
+                                <div>
+                                    <h2 class="text-2xl font-bold">The Growth of Gaming</h2>
+                                    
+                                </div>
+    
+                                <div>
+                                    <p>How the pandemic has sparked fresh opportunities</p>
+                                </div>
                                 
                             </div>
-
-                            <div>
-                                <p>How the pandemic has sparked fresh opportunities</p>
-                            </div>
-                            
+                        </div>
+    
+                        
                         </div>
                     </div>
-
-                    <
-                    </div>
-                </div>
-        
+            
             </div>
         </div>
-    </div>
+    </main>
+    
     
 
 </body>
